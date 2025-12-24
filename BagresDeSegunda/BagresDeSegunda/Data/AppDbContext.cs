@@ -12,7 +12,7 @@ namespace BagresDeSegunda.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Substitua pelos seus dados de acesso ao MySQL
-            string connectionString = "Server=localhost;Database=bagres_db;User=root;Password=sua_senha;";
+            string connectionString = "Server=localhost;Database=bagres_db;User=root;Password=tunasadmin;";
 
             // O Pomelo precisa saber a versão do seu MySQL (ex: 8.0.31 ou 5.7)
             var serverVersion = ServerVersion.AutoDetect(connectionString);

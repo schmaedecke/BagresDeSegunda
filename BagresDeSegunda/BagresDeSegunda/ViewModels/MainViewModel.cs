@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Input;
 using BagresDeSegunda.Data;
 using BagresDeSegunda.Models;
@@ -31,6 +32,46 @@ namespace BagresDeSegunda.ViewModels
         public ICommand EscalarTime1Command { get; }
         public ICommand EscalarTime2Command { get; }
         public ICommand SalvarJogoCommand { get; }
+        public ICommand ExcluirJogadorCommand => new RelayCommand<object>((obj) =>
+        {
+            if (obj is Jogador jogadorParaRemover)
+            {
+                var resultado = MessageBox.Show($"Deseja realmente excluir {jogadorParaRemover.Nome}?",
+                                      "Confirmação", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if(resultado == MessageBoxResult.Yes)
+                {
+                    try
+                    {
+                        using(var db = new AppDbContext())
+                        {
+                            db.Jogadores.Remove(jogadorParaRemover);
+                            db.SaveChanges();
+                            JogadoresDisponiveis.Remove(jogadorParaRemover);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Não foi possível excluir o jogador. Verifique se ele já possui partidas registradas.\nErro: " + ex.Message);
+                    }
+                }
+            }
+        });
+
+        public ICommand AdicionarJogadorCommand => new RelayCommand(() =>
+        {
+            if (!string.IsNullOrWhiteSpace(NomeNovoJogador))
+            {
+                using (var db = new AppDbContext())
+                {
+                    var novoJogador = new Jogador { Nome = NomeNovoJogador };
+                    db.Jogadores.Add(novoJogador);
+                    db.SaveChanges();
+                    JogadoresDisponiveis.Add(novoJogador);
+                    NomeNovoJogador = string.Empty;
+                }
+            }
+        });
 
         public MainViewModel()
         {
@@ -40,16 +81,18 @@ namespace BagresDeSegunda.ViewModels
 
             EscalarTime1Command = new RelayCommand<Jogador>(jogador =>
             {
-                if (jogador != null)
+                if (!Time1Escalado.Any(a => a.JogadorId == j.Id) && !Time2Escalado.Any(a => a.JogadorId == j.Id))
                 {
                     Time1Escalado.Add(new Atuacao { Jogador = jogador, NumeroTime = 1 });
                     JogadoresDisponiveis.Remove(jogador);
                 }
             });
-            SalvarJogoCommand = new RelayCommand (() =>
+            SalvarJogoCommand = new RelayCommand(() =>
             {
                 SalvarPartida();
             });
+            BuscarJogadoresBanco();
+
         }
 
         public int TotalGolsT1 => Time1Escalado.Sum(a => a.Gols);
@@ -104,6 +147,27 @@ namespace BagresDeSegunda.ViewModels
                 HistoricoPartidas.Clear();
                 var jogos = db.Partidas.OrderByDescending(p => p.Data).Take(10).ToList();
                 foreach (var p in jogos) HistoricoPartidas.Add(p);
+            }
+        }
+
+        private void BuscarJogadoresBanco()
+        {
+            try
+            {
+                using ( var db = new AppDbContext())
+                {
+                    var listaBanco = db.Jogadores.ToList();
+                    JogadoresDisponiveis.Clear();
+                    foreach(var jogador in listaBanco)
+                    {
+                        JogadoresDisponiveis.Add(jogador);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao carregar jogadores do MySQL: {ex.Message}");
             }
         }
 

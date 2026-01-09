@@ -81,10 +81,20 @@ namespace BagresDeSegunda.ViewModels
 
             EscalarTime1Command = new RelayCommand<Jogador>(jogador =>
             {
-                if (!Time1Escalado.Any(a => a.JogadorId == j.Id) && !Time2Escalado.Any(a => a.JogadorId == j.Id))
+                if (!Time1Escalado.Any(a => a.JogadorId == jogador.Id) && !Time2Escalado.Any(a => a.JogadorId == jogador.Id))
                 {
-                    Time1Escalado.Add(new Atuacao { Jogador = jogador, NumeroTime = 1 });
+                    Time1Escalado.Add(new Atuacao { Jogador = jogador, JogadorId = jogador.Id, NumeroTime = 1 });
                     JogadoresDisponiveis.Remove(jogador);
+                }
+            });
+
+            EscalarTime2Command = new RelayCommand<Jogador>(jogador =>
+            {
+                if (jogador != null && !Time1Escalado.Any(a => a.JogadorId == jogador.Id) && !Time2Escalado.Any(a => a.JogadorId == jogador.Id))
+                {
+                    Time2Escalado.Add(new Atuacao { Jogador = jogador, JogadorId = jogador.Id, NumeroTime = 2 });
+                    JogadoresDisponiveis.Remove(jogador);
+                    OnPropertyChanged(nameof(TotalGolsT2));
                 }
             });
             SalvarJogoCommand = new RelayCommand(() =>
@@ -105,32 +115,48 @@ namespace BagresDeSegunda.ViewModels
                 var novaPartida = new Partida
                 {
                     Data = DateTime.Now,
-                    GolsTimeA = TotalGolsT1,
-                    GolsTimeB = TotalGolsT2,
+                    GolsTime1 = TotalGolsT1,
+                    GolsTime2 = TotalGolsT2,
                     Atuacoes = new List<Atuacao>()
                 };
+                int golsT1 = TotalGolsT1;
+                int golsT2 = TotalGolsT2;
 
-                // Adiciona as atuações do Time 1 e Time 2
-                foreach (var a in Time1Escalado.Concat(Time2Escalado))
+                foreach (var atuacaoTela in Time1Escalado.Concat(Time2Escalado))
                 {
-                    // Vinculamos apenas o ID para o banco não tentar duplicar o Jogador
-                    novaPartida.Atuacoes.Add(new Atuacao
+                    var jogadorNoDb = db.Jogadores.Find(atuacaoTela.JogadorId);
+                    if (jogadorNoDb != null)
                     {
-                        JogadorId = a.JogadorId,
-                        Gols = a.Gols,
-                        NumeroTime = a.NumeroTime
-                    });
+                        jogadorNoDb.GolsMarcados += atuacaoTela.Gols;
+                        if (golsT1 > golsT2 && atuacaoTela.NumeroTime == 1 ||
+                            golsT2 > golsT1 && atuacaoTela.NumeroTime == 2)
+                        {
+                            jogadorNoDb.Vitorias += 1;
+                        }
+                        else if (golsT1 == golsT2)
+                        {
+                            jogadorNoDb.Empates += 1;
+                        }
+                        else
+                        {
+                            jogadorNoDb.Derrotas += 1;
+                        }
+                        novaPartida.Atuacoes.Add(new Atuacao
+                        {
+                            JogadorId = jogadorNoDb.Id,
+                            Gols = atuacaoTela.Gols,
+                            NumeroTime = atuacaoTela.NumeroTime
+                        });
+                    }
                 }
+                    db.Partidas.Add(novaPartida);
+                    db.SaveChanges();
 
-                db.Partidas.Add(novaPartida);
-                db.SaveChanges();
+                    Time1Escalado.Clear();
+                    Time2Escalado.Clear();
 
-                // Limpa a tela para o próximo jogo
-                Time1Escalado.Clear();
-                Time2Escalado.Clear();
-
-                // Atualiza as listas da tela
-                AtualizarRankingEHistorico();
+                    BuscarJogadoresBanco();
+                    AtualizarRankingEHistorico();
             }
         }
 
@@ -140,9 +166,41 @@ namespace BagresDeSegunda.ViewModels
             {
                 var todosJogadores = db.Jogadores.Include(j => j.Atuacoes).ThenInclude(a => a.Partida).ToList();
 
-                
-                // Aqui você calcula Vitórias, Empates e Derrotas baseado nas atuações
-                // e atualiza a ObservableCollection 'RankingGeral'
+                RankingGeral.Clear();
+
+                foreach (var jogador in todosJogadores)
+                {
+                    int vitorias = 0;
+                    int empates = 0;
+                    int derrotas = 0;
+
+                    foreach (var atuacao in jogador.Atuacoes)
+                    {
+                        var partida = atuacao.Partida;
+                        int golsDoTime = atuacao.Gols;
+                        int golsDoAdversario = partida.Atuacoes
+                            .Where(a => a.NumeroTime != atuacao.NumeroTime)
+                            .Sum(a => a.Gols);
+                        if (golsDoTime > golsDoAdversario)
+                            vitorias++;
+                        else if (golsDoTime == golsDoAdversario)
+                            empates++;
+                        else
+                            derrotas++;
+                    }
+
+                    jogador.Vitorias = vitorias;
+                    jogador.Empates = empates;
+                    jogador.Derrotas = derrotas;
+
+                    RankingGeral.Add(jogador);
+
+                }
+
+                var listaOrdenada = RankingGeral
+                    .OrderByDescending(j => j.Vitorias)
+                    .ThenBy(j => j.GolsMarcados)
+                    .ToList();
 
                 HistoricoPartidas.Clear();
                 var jogos = db.Partidas.OrderByDescending(p => p.Data).Take(10).ToList();

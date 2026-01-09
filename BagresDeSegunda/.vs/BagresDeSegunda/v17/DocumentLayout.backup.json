@@ -3,36 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\converters\\counttovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\converters\\counttovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\models\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\models\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gusta\\AppData\\Local\\Temp\\.vsdbgsrc\\a2c8e1e784dd9d2cc211f086114d89c8eacc6df076f290e28c4559989e7d9562\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\models\\atuacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\models\\atuacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\models\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\models\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\models\\partida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\models\\partida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\converters\\counttovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|solutionrelative:bagresdesegunda\\converters\\counttovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC13934F-5F49-4F77-ADF9-3653CC2CCFD1}|BagresDeSegunda\\BagresDeSegunda.csproj|c:\\users\\gusta\\onedrive\\documentos\\github\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda\\bagresdesegunda.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -57,7 +60,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 160,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,16 +68,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CountToVisibilityConverter.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Converters\\CountToVisibilityConverter.cs",
-              "RelativeDocumentMoniker": "BagresDeSegunda\\Converters\\CountToVisibilityConverter.cs",
-              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Converters\\CountToVisibilityConverter.cs",
-              "RelativeToolTip": "BagresDeSegunda\\Converters\\CountToVisibilityConverter.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAswBcAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\AppData\\Local\\Temp\\.vsdbgsrc\\a2c8e1e784dd9d2cc211f086114d89c8eacc6df076f290e28c4559989e7d9562\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a2c8e1e784dd9d2cc211f086114d89c8eacc6df076f290e28c4559989e7d9562\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\gusta\\AppData\\Local\\Temp\\.vsdbgsrc\\a2c8e1e784dd9d2cc211f086114d89c8eacc6df076f290e28c4559989e7d9562\\XamlReader.cs [Somente Leitura]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a2c8e1e784dd9d2cc211f086114d89c8eacc6df076f290e28c4559989e7d9562\\XamlReader.cs [Somente Leitura]",
+              "ViewState": "AgIAAPMBAAAAAAAAAAAWwP0BAAACAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T21:52:10.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T19:00:05.414Z",
+              "EditorCaption": " [Somente Leitura]"
             },
             {
               "$type": "Document",
@@ -84,27 +87,27 @@
               "RelativeDocumentMoniker": "BagresDeSegunda\\Views\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Views\\MainWindow.xaml.cs",
               "RelativeToolTip": "BagresDeSegunda\\Views\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T00:22:33.504Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Atuacao.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Models\\Atuacao.cs",
               "RelativeDocumentMoniker": "BagresDeSegunda\\Models\\Atuacao.cs",
               "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Models\\Atuacao.cs",
               "RelativeToolTip": "BagresDeSegunda\\Models\\Atuacao.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwA0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T00:40:05.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ResourcePart.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
@@ -122,65 +125,77 @@
               "RelativeDocumentMoniker": "BagresDeSegunda\\Models\\Jogador.cs",
               "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Models\\Jogador.cs",
               "RelativeToolTip": "BagresDeSegunda\\Models\\Jogador.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAnwAsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T00:37:11.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Partida.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Models\\Partida.cs",
               "RelativeDocumentMoniker": "BagresDeSegunda\\Models\\Partida.cs",
               "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Models\\Partida.cs",
               "RelativeToolTip": "BagresDeSegunda\\Models\\Partida.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T00:39:19.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Views\\MainWindow.xaml",
               "RelativeDocumentMoniker": "BagresDeSegunda\\Views\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Views\\MainWindow.xaml",
-              "RelativeToolTip": "BagresDeSegunda\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Views\\MainWindow.xaml*",
+              "RelativeToolTip": "BagresDeSegunda\\Views\\MainWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-18T00:00:16.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "BagresDeSegunda\\ViewModels\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\ViewModels\\MainViewModel.cs",
               "RelativeToolTip": "BagresDeSegunda\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAnwF0AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAtwGUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T00:31:52.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "BagresDeSegunda\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Data\\AppDbContext.cs",
               "RelativeToolTip": "BagresDeSegunda\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T01:07:47.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
+              "Title": "CountToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Converters\\CountToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "BagresDeSegunda\\Converters\\CountToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\Converters\\CountToVisibilityConverter.cs",
+              "RelativeToolTip": "BagresDeSegunda\\Converters\\CountToVisibilityConverter.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswBcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T21:52:10.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\App.xaml",
               "RelativeDocumentMoniker": "BagresDeSegunda\\App.xaml",
@@ -192,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "BagresDeSegunda.csproj",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda.csproj",
               "RelativeDocumentMoniker": "BagresDeSegunda\\BagresDeSegunda.csproj",
@@ -204,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documentos\\GitHub\\BagresDeSegunda\\BagresDeSegunda\\BagresDeSegunda\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "BagresDeSegunda\\AssemblyInfo.cs",

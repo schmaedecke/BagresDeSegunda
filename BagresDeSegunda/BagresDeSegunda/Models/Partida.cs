@@ -10,8 +10,8 @@ namespace BagresDeSegunda.Models
     {
         public int Id { get; set; }
         public DateTime Data { get; set; }
-        public int GolsTimeA { get; set; }
-        public int GolsTimeB { get; set; }
+        public int GolsTime1 { get; set; }
+        public int GolsTime2 { get; set; }
         public virtual ICollection<Atuacao> Atuacoes { get; set; }
     }
 }
